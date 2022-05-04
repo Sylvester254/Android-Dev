@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/silver/AndroidStudioProjects/Android-Dev/eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core
+1779826490.index
+1581524451.index
+1865797976.index

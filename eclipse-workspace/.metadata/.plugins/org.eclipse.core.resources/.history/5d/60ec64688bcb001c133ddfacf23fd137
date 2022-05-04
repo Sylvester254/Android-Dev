@@ -1,0 +1,47 @@
+package Game;
+
+import java.util.NoSuchElementException;
+import java.util.Random;
+import java.util.Scanner;
+
+public class numGame {
+
+	public static void main(String[] args) throws NoSuchElementException{
+		// TODO Auto-generated method stub
+		System.out.println("~~~~~~~~WELCOME TO GUESS GAME !!~~~~~~~~ \n Your Name? ");
+		Scanner scanner = new Scanner(System.in);
+		String name = scanner.next();
+		System.out.println("\nHello " + name);
+		
+		System.out.println("\n To start: press 1 \n To Quit: press 2");
+	    int start = scanner.nextInt();
+	   
+	    while(start != 1 && start != 2) {
+			System.out.println("Wrong choice, try again");
+			start = scanner.nextInt();
+	    }
+	    
+		if(start == 1) {
+			System.out.println("Great!! let's begin... \n Guess a number between 0 and 20");
+			Scanner scan = new Scanner(System.in);
+			int num = scan.nextInt();
+			
+			Random rand = new Random();
+			int digit = rand.nextInt();
+			
+			if(digit == num) {
+				System.out.printf("Your number: " + num,"\n Opponent's number: " + digit);
+				System.out.printf("Cheers " + name, ", you WIN!!!");
+			}
+			else {
+				System.out.printf("Your number: " + num,"\n Opponent's number: " + digit);
+				System.out.println("Sorry, you fail");
+			}
+		}
+		else if(start == 2){
+			System.out.println("Bye " + name);
+		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package Game;
+
+import java.util.Scanner;
+
+public class numGame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("~~~~~~~~WELCOME TO GUESS GAME !!~~~~~~~~ \n Your Name?");
+		Scanner scanner = new Scanner(System.in);
+		String name = scanner.next();
+		System.out.println("Hello " + name);
+		
+		
+
+	}
+
+}
